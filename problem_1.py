@@ -13,8 +13,5 @@ for i in range(0,1000):
     total += i
   if i%3 != 0 and i%5 == 0:
     total += i     
-
-print()
-print()
 print('The total is ' + str(total))
 
