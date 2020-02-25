@@ -8,15 +8,17 @@ import pandas as pd, numpy, matplotlib
 # put those factors in a list
 # check to see if those factors are prime
 
-list = [0]
-for i in range(2,13195):
-  if 13195%i == 0:          #if i is a factor
-    for n in range(2,i-1):  #check to see if i is prime
-      prime = True
-      if i%n == 0:          #i is not prime 
-        prime = False
-      if prime == True:
-        list.append(i)      #add i to a list
-         
-print(list)    
+list = []
+number = 600851475143
+for factor in range(2,number//2): #divide by 2 to save time
+  if number%factor == 0:          
+    list.append(factor) 
+    for n in range(2,factor//2):  #are the factors prime?
+      if factor%n == 0:
+        list.remove(factor)
+        break
+
+print()         
+print(list)  
+  
        
