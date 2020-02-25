@@ -17,7 +17,7 @@ for number1 in range(999,900,-1):
     fourth_digit = digits[3]
     fifth_digit = digits[4]
     last_digit = digits[len(digits)-1]
-    if first_digit == last_digit and second_digit == fifth_digit and third_digit == fourth_digit:
+    if first_digit == last_digit and second_digit == fifth_digit and third_digit == fourth_digit: #palindrome
       if product > largest_palindrome:
         largest_palindrome = product              
 if largest_palindrome == 0:
