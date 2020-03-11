@@ -19,11 +19,25 @@ for number1 in range(999,900,-1):
     last_digit = digits[len(digits)-1]
     if first_digit == last_digit and second_digit == fifth_digit and third_digit == fourth_digit: #palindrome
       if product > largest_palindrome:
-        largest_palindrome = product              
+        largest_palindrome = product       
 if largest_palindrome == 0:
   print('there is no palindrome')
 else:
   print(largest_palindrome, 'is the largest palindrome')
+
+#solution 2 with [::]
+largest_palindrome = 0
+for number1 in range(999,900,-1):
+  for number2 in range(999,900,-1):
+    product = str(number1 * number2)
+    if product[::] == product[::-1] and int(product) > largest_palindrome:
+      largest_palindrome = int(product)
+if largest_palindrome == 0:
+  print('there is no palindrome')
+else:
+  print(largest_palindrome, 'is the largest palindrome')
+
+
 
 
 
