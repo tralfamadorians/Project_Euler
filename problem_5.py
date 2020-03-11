@@ -10,7 +10,7 @@ multiple = 19*17*13*11*7*5*3*2 #19,17,13,7,5,3,2 are prime
 while smallest == 0:
   divisible = True
   test += multiple  
-  for r in range(11,21):
+  for r in range(11,21): #=<10 is divisible by 11-20
     if test%r != 0:
       divisible = False
       print('Not ',test)
