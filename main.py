@@ -1,3 +1,3 @@
 import pandas as pd, numpy, matplotlib
 
-from problem_6 import *
+from problem_7 import *
